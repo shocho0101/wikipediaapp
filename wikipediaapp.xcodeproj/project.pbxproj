@@ -12,7 +12,18 @@
 		CA5A286823017B530099A338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5A286623017B530099A338 /* Main.storyboard */; };
 		CA5A286A23017B550099A338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5A286923017B550099A338 /* Assets.xcassets */; };
 		CA5A286D23017B550099A338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5A286B23017B550099A338 /* LaunchScreen.storyboard */; };
+		CA5A287B2301811B0099A338 /* wikipediaappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A287A2301811B0099A338 /* wikipediaappTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA5A287D2301811B0099A338 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA5A285723017B530099A338 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA5A285E23017B530099A338;
+			remoteInfo = wikipediaapp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CA5A285F23017B530099A338 /* wikipediaapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wikipediaapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +33,20 @@
 		CA5A286923017B550099A338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA5A286C23017B550099A338 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA5A286E23017B550099A338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA5A28782301811B0099A338 /* wikipediaappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wikipediaappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5A287A2301811B0099A338 /* wikipediaappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wikipediaappTests.swift; sourceTree = "<group>"; };
+		CA5A287C2301811B0099A338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CA5A285C23017B530099A338 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA5A28752301811B0099A338 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				CA5A286123017B530099A338 /* wikipediaapp */,
+				CA5A28792301811B0099A338 /* wikipediaappTests */,
 				CA5A286023017B530099A338 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				CA5A285F23017B530099A338 /* wikipediaapp.app */,
+				CA5A28782301811B0099A338 /* wikipediaappTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +85,15 @@
 				CA5A286E23017B550099A338 /* Info.plist */,
 			);
 			path = wikipediaapp;
+			sourceTree = "<group>";
+		};
+		CA5A28792301811B0099A338 /* wikipediaappTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA5A287A2301811B0099A338 /* wikipediaappTests.swift */,
+				CA5A287C2301811B0099A338 /* Info.plist */,
+			);
+			path = wikipediaappTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +116,24 @@
 			productReference = CA5A285F23017B530099A338 /* wikipediaapp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		CA5A28772301811B0099A338 /* wikipediaappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA5A287F2301811B0099A338 /* Build configuration list for PBXNativeTarget "wikipediaappTests" */;
+			buildPhases = (
+				CA5A28742301811B0099A338 /* Sources */,
+				CA5A28752301811B0099A338 /* Frameworks */,
+				CA5A28762301811B0099A338 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA5A287E2301811B0099A338 /* PBXTargetDependency */,
+			);
+			name = wikipediaappTests;
+			productName = wikipediaappTests;
+			productReference = CA5A28782301811B0099A338 /* wikipediaappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +146,10 @@
 				TargetAttributes = {
 					CA5A285E23017B530099A338 = {
 						CreatedOnToolsVersion = 10.3;
+					};
+					CA5A28772301811B0099A338 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = CA5A285E23017B530099A338;
 					};
 				};
 			};
@@ -113,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				CA5A285E23017B530099A338 /* wikipediaapp */,
+				CA5A28772301811B0099A338 /* wikipediaappTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +183,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CA5A28762301811B0099A338 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +202,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CA5A28742301811B0099A338 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA5A287B2301811B0099A338 /* wikipediaappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA5A287E2301811B0099A338 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA5A285E23017B530099A338 /* wikipediaapp */;
+			targetProxy = CA5A287D2301811B0099A338 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CA5A286623017B530099A338 /* Main.storyboard */ = {
@@ -314,6 +392,46 @@
 			};
 			name = Release;
 		};
+		CA5A28802301811B0099A338 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BV8VP6YGE9;
+				INFOPLIST_FILE = wikipediaappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.choccho.wikipediaappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wikipediaapp.app/wikipediaapp";
+			};
+			name = Debug;
+		};
+		CA5A28812301811B0099A338 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BV8VP6YGE9;
+				INFOPLIST_FILE = wikipediaappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.choccho.wikipediaappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wikipediaapp.app/wikipediaapp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +449,15 @@
 			buildConfigurations = (
 				CA5A287223017B550099A338 /* Debug */,
 				CA5A287323017B550099A338 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA5A287F2301811B0099A338 /* Build configuration list for PBXNativeTarget "wikipediaappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA5A28802301811B0099A338 /* Debug */,
+				CA5A28812301811B0099A338 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
