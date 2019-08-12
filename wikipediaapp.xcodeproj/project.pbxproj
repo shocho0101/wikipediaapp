@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101B1F4E8327B0717ADEC03A /* Pods_wikipediaapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58D3E42E841941F53C0914E0 /* Pods_wikipediaapp.framework */; };
+		946E172D0D3B6FFDB6618C34 /* Pods_wikipediaappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF14AB048298F87720B5BCE3 /* Pods_wikipediaappTests.framework */; };
 		CA5A286323017B530099A338 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A286223017B530099A338 /* AppDelegate.swift */; };
 		CA5A286523017B530099A338 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A286423017B530099A338 /* ViewController.swift */; };
 		CA5A286823017B530099A338 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5A286623017B530099A338 /* Main.storyboard */; };
@@ -26,6 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3FAEC14F1670C8E36E3186E8 /* Pods-wikipediaappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wikipediaappTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-wikipediaappTests/Pods-wikipediaappTests.release.xcconfig"; sourceTree = "<group>"; };
+		58D3E42E841941F53C0914E0 /* Pods_wikipediaapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wikipediaapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD7D2D7FC1D22C90CB62B0A /* Pods-wikipediaapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wikipediaapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-wikipediaapp/Pods-wikipediaapp.release.xcconfig"; sourceTree = "<group>"; };
+		AF14AB048298F87720B5BCE3 /* Pods_wikipediaappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wikipediaappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5A285F23017B530099A338 /* wikipediaapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wikipediaapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5A286223017B530099A338 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA5A286423017B530099A338 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		CA5A28782301811B0099A338 /* wikipediaappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wikipediaappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5A287A2301811B0099A338 /* wikipediaappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wikipediaappTests.swift; sourceTree = "<group>"; };
 		CA5A287C2301811B0099A338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92EB64717201CA1303B267E /* Pods-wikipediaapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wikipediaapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wikipediaapp/Pods-wikipediaapp.debug.xcconfig"; sourceTree = "<group>"; };
+		DBE8C4537A8FCB6A51BA4ACC /* Pods-wikipediaappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wikipediaappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wikipediaappTests/Pods-wikipediaappTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101B1F4E8327B0717ADEC03A /* Pods_wikipediaapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				946E172D0D3B6FFDB6618C34 /* Pods_wikipediaappTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38176981D7FE456EB9CD0A14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58D3E42E841941F53C0914E0 /* Pods_wikipediaapp.framework */,
+				AF14AB048298F87720B5BCE3 /* Pods_wikipediaappTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B89417B1A55432C88BBE6C54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D92EB64717201CA1303B267E /* Pods-wikipediaapp.debug.xcconfig */,
+				8FD7D2D7FC1D22C90CB62B0A /* Pods-wikipediaapp.release.xcconfig */,
+				DBE8C4537A8FCB6A51BA4ACC /* Pods-wikipediaappTests.debug.xcconfig */,
+				3FAEC14F1670C8E36E3186E8 /* Pods-wikipediaappTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CA5A285623017B530099A338 = {
 			isa = PBXGroup;
 			children = (
 				CA5A286123017B530099A338 /* wikipediaapp */,
 				CA5A28792301811B0099A338 /* wikipediaappTests */,
 				CA5A286023017B530099A338 /* Products */,
+				B89417B1A55432C88BBE6C54 /* Pods */,
+				38176981D7FE456EB9CD0A14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA5A287123017B550099A338 /* Build configuration list for PBXNativeTarget "wikipediaapp" */;
 			buildPhases = (
+				EE2F0C0CE6BBB6654F1EFC99 /* [CP] Check Pods Manifest.lock */,
 				CA5A285B23017B530099A338 /* Sources */,
 				CA5A285C23017B530099A338 /* Frameworks */,
 				CA5A285D23017B530099A338 /* Resources */,
+				F4F653E3104B2377A8FE044A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA5A287F2301811B0099A338 /* Build configuration list for PBXNativeTarget "wikipediaappTests" */;
 			buildPhases = (
+				10E721D625FC0F0607032C2A /* [CP] Check Pods Manifest.lock */,
 				CA5A28742301811B0099A338 /* Sources */,
 				CA5A28752301811B0099A338 /* Frameworks */,
 				CA5A28762301811B0099A338 /* Resources */,
@@ -191,6 +226,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10E721D625FC0F0607032C2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wikipediaappTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE2F0C0CE6BBB6654F1EFC99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wikipediaapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4F653E3104B2377A8FE044A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-wikipediaapp/Pods-wikipediaapp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wikipediaapp/Pods-wikipediaapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CA5A285B23017B530099A338 /* Sources */ = {
@@ -358,6 +468,7 @@
 		};
 		CA5A287223017B550099A338 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D92EB64717201CA1303B267E /* Pods-wikipediaapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +488,7 @@
 		};
 		CA5A287323017B550099A338 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD7D2D7FC1D22C90CB62B0A /* Pods-wikipediaapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +508,7 @@
 		};
 		CA5A28802301811B0099A338 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBE8C4537A8FCB6A51BA4ACC /* Pods-wikipediaappTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -416,6 +529,7 @@
 		};
 		CA5A28812301811B0099A338 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FAEC14F1670C8E36E3186E8 /* Pods-wikipediaappTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
