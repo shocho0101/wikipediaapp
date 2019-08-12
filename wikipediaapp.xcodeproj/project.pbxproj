@@ -15,6 +15,9 @@
 		CA5A286A23017B550099A338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA5A286923017B550099A338 /* Assets.xcassets */; };
 		CA5A286D23017B550099A338 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA5A286B23017B550099A338 /* LaunchScreen.storyboard */; };
 		CA5A287B2301811B0099A338 /* wikipediaappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A287A2301811B0099A338 /* wikipediaappTests.swift */; };
+		CA5A28832301A6DE0099A338 /* WikipediaPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A28822301A6DE0099A338 /* WikipediaPage.swift */; };
+		CA5A28862301AF2F0099A338 /* WikipediaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A28852301AF2F0099A338 /* WikipediaAPI.swift */; };
+		CA5A28882301C3F50099A338 /* GetPageFromIDRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5A28872301C3F50099A338 /* GetPageFromIDRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		CA5A28782301811B0099A338 /* wikipediaappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wikipediaappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA5A287A2301811B0099A338 /* wikipediaappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wikipediaappTests.swift; sourceTree = "<group>"; };
 		CA5A287C2301811B0099A338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA5A28822301A6DE0099A338 /* WikipediaPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaPage.swift; sourceTree = "<group>"; };
+		CA5A28852301AF2F0099A338 /* WikipediaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaAPI.swift; sourceTree = "<group>"; };
+		CA5A28872301C3F50099A338 /* GetPageFromIDRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPageFromIDRequest.swift; sourceTree = "<group>"; };
 		D92EB64717201CA1303B267E /* Pods-wikipediaapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wikipediaapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wikipediaapp/Pods-wikipediaapp.debug.xcconfig"; sourceTree = "<group>"; };
 		DBE8C4537A8FCB6A51BA4ACC /* Pods-wikipediaappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wikipediaappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wikipediaappTests/Pods-wikipediaappTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +115,7 @@
 		CA5A286123017B530099A338 /* wikipediaapp */ = {
 			isa = PBXGroup;
 			children = (
+				CA5A28842301A8130099A338 /* Model */,
 				CA5A286223017B530099A338 /* AppDelegate.swift */,
 				CA5A286423017B530099A338 /* ViewController.swift */,
 				CA5A286623017B530099A338 /* Main.storyboard */,
@@ -126,6 +133,16 @@
 				CA5A287C2301811B0099A338 /* Info.plist */,
 			);
 			path = wikipediaappTests;
+			sourceTree = "<group>";
+		};
+		CA5A28842301A8130099A338 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA5A28822301A6DE0099A338 /* WikipediaPage.swift */,
+				CA5A28852301AF2F0099A338 /* WikipediaAPI.swift */,
+				CA5A28872301C3F50099A338 /* GetPageFromIDRequest.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +351,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA5A28882301C3F50099A338 /* GetPageFromIDRequest.swift in Sources */,
+				CA5A28832301A6DE0099A338 /* WikipediaPage.swift in Sources */,
+				CA5A28862301AF2F0099A338 /* WikipediaAPI.swift in Sources */,
 				CA5A286523017B530099A338 /* ViewController.swift in Sources */,
 				CA5A286323017B530099A338 /* AppDelegate.swift in Sources */,
 			);
