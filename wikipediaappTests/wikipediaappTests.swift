@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import wikipediaapp
 
 class wikipediaappTests: XCTestCase {
 
@@ -22,6 +23,20 @@ class wikipediaappTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    
+    func testGetPageFromIDRequest() {
+        let expect = expectation(description: "async test")
+        let request = GetPageFromIDRequest(id: 7796)
+        WikipediaAPI.send(request: request).subscribe(onSuccess: { (wikipediaPage) in
+            print(wikipediaPage)
+            expect.fulfill()
+        }) { (error) in
+            print(error)
+            XCTFail()
+        }
+        wait(for: [expect], timeout: 5)
+    }
+    
 
     func testPerformanceExample() {
         // This is an example of a performance test case.

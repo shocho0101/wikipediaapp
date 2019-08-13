@@ -18,8 +18,7 @@ class WikipediaAPI {
         return Single<R>.create(subscribe: { observable -> Disposable in
             Alamofire.request(baseURL,
                               method: request.method,
-                              parameters: request.parameters,
-                              encoding: JSONEncoding.default)
+                              parameters: request.parameters)
                 .response(completionHandler: { (response) in
                     guard let data = response.data else {
                         observable(.error(APIError.couldNotGetData))

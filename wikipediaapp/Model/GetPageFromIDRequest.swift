@@ -30,16 +30,19 @@ struct GetPageFromIDRequest: APIRequest {
     struct QueryResponseData: Codable {
         var query: Query
         struct Query: Codable {
-            var pages: [Int: WikipediaPage]
+            var pages: [String: WikipediaPage]
         }
     }
     
-    func parseData(data: Data) -> WikipediaPage? {
+    func parseData(data: Data) -> ResponseType? {
         let decoder = JSONDecoder()
         let decodedData = try? decoder.decode(QueryResponseData.self, from: data)
         return decodedData?.query.pages.first?.value
     }
+    
+    
 
 }
+
 
 
